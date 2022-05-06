@@ -34,6 +34,8 @@ DisBatchPython = sys.executable
 DisBatchRoot = os.environ.get('DISBATCH_ROOT', None)
 DbUtilPath = None # This is a global that will be set once the disBatch starts.
 
+print("dsr", DisBatchRoot)
+print(os.environ)
 if DisBatchRoot:
     if DisBatchRoot not in sys.path:
         sys.path.append(DisBatchRoot)
